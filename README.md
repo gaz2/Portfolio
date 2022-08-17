@@ -1,4 +1,3 @@
 # My-business-card
-http://zimenkov.site/
 
-https://zimenkov-alexander.github.io/My-business-card/
+https://oksanakudlay.github.io/portfolio/
