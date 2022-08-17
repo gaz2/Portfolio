@@ -11,22 +11,54 @@
     <link rel="shortcut icon" href="img/icon-site.png" type="image/svg" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <title>Oksana Kudlay</title>
+	  <style>
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    .fixed-header{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }    
+    /* Some more styles to beutify this example */
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+    .container p{
+        line-height: 200px; /* Create scrollbar to test positioning */
+    }
+</style>
   </head>
   <body>
-    <div class="wrapper">
-		<header class="header">
-			<nav class="nav__menu">
-				<div class="_container">
-					<ul class="header__items">
-						<li class="header__item"><a href="#top">В начало</a></li>
-						<li class="header__item"><a href="#portfolio">Портфолио</a></li>
-						<li class="header__item"><a href="#cv">Резюме</a></li>
-						<li class="header__item"><a href="#about">Обо мне</a></li>
-						<li class="header__item"><a href="#contacts">Контакты</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+	  <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Products</a>
+                <a href="#">Services</a>
+                <a href="#">Contact Us</a>
+            </nav>
+        </div>
+    </div>
           <section class="home" id="home">
             <div class="home__wrapper">
               <h2 class="home__name">Оксана Кудлай</h2>
